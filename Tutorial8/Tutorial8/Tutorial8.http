@@ -1,0 +1,29 @@
+GET https://localhost:5001/api/trips
+Accept: application/json
+
+###
+
+GET https://localhost:5001/api/clients/1/trips
+Accept: application/json
+
+###
+
+POST https://localhost:5001/api/clients
+Content-Type: application/json
+
+{
+  "firstName": "Anna",
+  "lastName": "Kowalska",
+  "email": "anna.kowalska@example.com",
+  "telephone": "123456789",
+  "pesel": "90010112345"
+}
+
+###
+
+
+PUT https://localhost:5001/api/clients/1/trips/2
+
+###
+
+DELETE https://localhost:5001/api/clients/1/trips/2
